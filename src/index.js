@@ -27,7 +27,7 @@ function postComment(formData){
     },
     body: JSON.stringify(formData)
   }
-  fetch('http://blog.flatironschool.com/wp-content/uploads/2015/10/laptop-352x200.jpg', configObj)
+  fetch('https://randopic.herokuapp.com/images/4070', configObj)
     .then(resp => resp.json())
     .then(comment => console.log(comment))
 
